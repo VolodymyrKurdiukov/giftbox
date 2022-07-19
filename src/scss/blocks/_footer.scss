@@ -1,0 +1,51 @@
+.footer {
+	background-color: #f7f7f7;
+	padding: 108px 0px;
+	&__row {
+		display: flex;
+	}
+	&__column {
+		flex: 0 1 33.333%;
+	}
+
+	&__adress {
+		width: 236px;
+		color: #848789;
+		font-style: italic;
+		line-height: 17.87px;
+		text-align: left;
+		span {
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
+
+	&__social {
+		text-align: center;
+		a{
+			display:inline-block;
+			margin: 0px 7.5px;
+		}
+	}
+
+
+	&__img {
+	}
+
+	&__dev {
+		justify-content: flex-end;
+		display: flex;
+		align-items: center;
+	}
+
+	&__text {
+		line-height: 20px;
+		color: #848789;
+		font-style: italic;
+		line-height: 17.87px;
+		margin: 0px 10px 0px 0px;
+	}
+
+	&__image {
+	}
+}

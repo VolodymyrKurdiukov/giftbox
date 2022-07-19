@@ -1,0 +1,15 @@
+@media (max-width: 574.98px) {
+	.footer{
+		padding: 50px 0px;
+		&__row{
+			flex-direction: column;align-items: center;justify-content: center;
+		}
+		&__adress{
+			text-align: center;
+			margin: 0px 0px 20px 0px;
+		}
+		&__social{
+			margin: 0px 0px 20px 0px;
+		}
+	}
+}

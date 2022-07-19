@@ -1,0 +1,13 @@
+@mixin earth{
+	&:before{
+		content:'';
+		position: absolute;
+		left: 0;
+		top: -32%;
+		width: 36px;
+		height: 36px;
+		background: $main-color;
+		border-radius: 100%;
+		z-index: -1;
+	}
+}
