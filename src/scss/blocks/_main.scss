@@ -1,0 +1,148 @@
+.main {
+	padding: 168px 0px 0px 0px;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__body {
+		flex: 1 1 auto;
+		display: flex;
+		margin: 0px -20px;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__column {
+		padding: 0px 20px;
+		&:first-child {
+			flex: 1 1 42.48%;
+			padding: 65px 20px 0px 20px;
+		}
+		&:last-child {
+			flex: 1 1 57.52%;
+		}
+	}
+
+	&__title {
+		color: $main-color;
+		font-family: "Tenor Sans";
+		font-size: 64px;
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__text {
+		color: $main-color;
+		font-family: "Tenor Sans";
+		font-size: 20px;
+		letter-spacing: 0.4px;
+		line-height: 160%;
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__social {
+	}
+
+	&__link {
+	}
+}
+
+.social-main {
+	display: flex;
+	align-items: center;
+	&__inst {
+		width: 54px;
+		height: 54px;
+		background-color: #d5c8b8;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+		transition: all 0.3s ease;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__face {
+		width: 54px;
+		height: 54px;
+		background-color: #d5c8b8;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0px 50px;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+		transition: all 0.3s ease;
+		img {
+			max-width: 100%;
+		}
+	}
+	&__text {
+		transition: all 0.3s ease;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -20px;
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 20px;
+		margin: 0px 0px 40px 0px;
+	}
+	&__item {
+		position: relative;
+		height: 100%;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	&__title {
+		color: $main-color;
+		font-size: 32px;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 2;
+		padding: 64px 0px 0px 0px;
+		display: block;
+
+		text-align: center;
+	}
+
+	&__icon {
+		position: relative;
+		z-index: 2;
+		&-1 {
+			padding: 87px 0px 0px 0px;
+			margin: 0px 0px -9px -20px;
+		}
+		&-2 {
+			padding: 87px 0px 0px 0px;
+			margin: 0px 0px -9px -20px;
+		}
+		&-3 {
+			padding: 25px 0px 0px 0px;
+			margin: 0px 0px -50px -40px;
+		}
+		&-4 {
+			padding: 45px 0px 0px 0px;
+			margin: 0px 0px -6px -43px;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+}
