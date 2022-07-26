@@ -1,0 +1,91 @@
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+	.contacts-header {
+		margin: 0px 20px 0px 0px;
+	}
+	.actions-header {
+		&__botton {
+			margin: 0px 0px 0px 20px;
+		}
+	}
+	.header{
+		&__logo{
+			flex: 0 1 33.333%;
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.header {
+		&__logo{
+			flex: 0 1 50%;
+		}
+		&__burger {
+			display: block;
+		}
+		&__phone {
+			display: flex;
+		}
+		&__container {
+			min-height: 68px;
+		}
+	}
+	.actions-header {
+		&__botton {
+			margin: 30px 0px 0px 0px;
+			width: 100%;
+		}
+	}
+	.contacts-header {
+		&__phone {
+			font-size: 40px;
+			display: block;
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	body.lock {
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.header{
+		&__logo{
+			flex: 0 1 44%;
+		}
+	}
+	.contacts-header {
+		&__phone {
+			font-size: 32px;
+		}
+	}
+}
+@media (any-hover: hover) {
+	.header {
+		&__logo {
+			&:hover {
+				transform: scale(1.3);
+			}
+		}
+	}
+	.contacts-header {
+		&__phone {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.actions-header {
+		&__cart {
+			&:hover {
+				transform: scale(1.3);
+			}
+		}
+
+		&__botton {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
