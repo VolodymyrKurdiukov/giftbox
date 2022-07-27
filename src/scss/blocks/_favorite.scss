@@ -1,0 +1,135 @@
+.favorite {
+	position: relative;
+	z-index: 2;
+	flex-direction: column;
+	&__container {
+		margin: 0px auto 45px auto;
+	}
+
+	&__header {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		display: flex;
+		padding: 30px 60px 0px 60px;
+		margin: 0px -25px;
+		justify-content: space-between;
+	}
+
+	&__images {
+		flex: 0 0 45.98%;
+		padding: 0px 25px;
+	}
+
+	&__body {
+		flex: 0 0 40.17%;
+		padding: 0px 25px;
+	}
+}
+
+.body-favorite {
+	height: 100%;
+	border-radius: 25px;
+	border: 1px solid #84a323;
+	background-color: #c1ad9a;
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	&__title {
+		text-align: center;
+		font-size: 24px;
+		letter-spacing: 2.76px;
+		text-transform: uppercase;
+	}
+
+	&__list {
+		margin: 50px 0px 0px 0px;
+		flex: 1 1 auto;
+	}
+
+	&__item {
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__link {
+		color: #fbe0d8;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	&__button {
+		align-self: center;
+	}
+}
+
+.images-favorite {
+	min-width: 0;
+	&__mainslider {
+		.slick-list {
+			overflow: visible;
+		}
+		.slick-dots {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.slick-dots {
+			li {
+				list-style: none;
+				margin: 30px 5px;
+				&.slick-active {
+					button{
+						border-radius: 100%;
+					width: 14px;
+					height: 14px;
+					background-color: #283644;
+					}
+				}
+			}
+		}
+		.slick-dots {
+			button {
+				font-size: 0;
+				border-radius: 100%;
+				width: 12px;
+				height: 12px;
+				background-color: #6c7a89;
+			}
+		}
+	}
+
+	&__mainslide {
+		position: relative;
+	}
+
+	&__image {
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 10px 8px rgba(0, 0, 0, 0.25);
+		padding: 0px 0px 100% 0px;
+		cursor: pointer;
+	}
+	&__icon {
+		position: absolute;
+		right: 15px;
+		bottom: -20px;
+		img {
+			max-width: 100%;
+		}
+	}
+	&__subslider {
+		padding: 0px 0px 0px 40px;
+		margin: 0px -7.5px;
+	}
+
+	&__subslide {
+		padding: 0px 7.5px;
+	}
+
+	&__subimage {
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 10px 8px rgba(0, 0, 0, 0.25);
+		cursor: pointer;
+		padding: 0px 0px 100% 0px;
+	}
+}

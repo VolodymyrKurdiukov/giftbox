@@ -177,4 +177,42 @@ $(document).ready(function () {
 		$('.header__burger,.header__menu').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
+
+	$('.images-favorite__mainslider').slick({
+		arrows: false,
+		fade: true,
+		adaptiveHeight: true,
+		infinite: true,
+		speed: 500,
+		responsive: [
+			{
+				breakpoint: 767.98,
+				settings: {
+					dots:true
+				}
+			}
+		],
+		asNavFor: '.images-favorite__subslider'
+	});
+	$('.images-favorite__subslider').slick({
+		slidesToShow: 10,
+		asNavFor: '.images-favorite__mainslider',
+		dots: false,
+		adaptiveHeight: true,
+		focusOnSelect: true,
+		infinite: true,
+		speed: 500,
+		initialSlide: 0,
+		autoplay: true,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 991.98,
+				settings: {
+					slidesToShow: 6
+				}
+			}
+		]
+	});
+
 });
