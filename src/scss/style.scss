@@ -12,82 +12,26 @@
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
-	opacity: 0;
-	transition: all 0.3s ease;
-	&._loaded {
-		opacity: 1;
-		.header {
-			transform: translate(0, 0);
-		}
-		.page__pagination {
-			transform: translate(0, -50%);
-			opacity: 1;
-			visibility: visible;
-		}
-	}
-	&._free {
-		.page__pagination {
-			transform: translate(50px, -50%);
-			opacity: 0;
-		}
-	}
 }
 .page {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	&__wrapper {
-		background-color: #786757;
-		display: flex;
-		flex-direction: column;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: #786757;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
 		width: 100%;
 		height: 100%;
+		top: 0;
+		left: -50%;
+		background-color: #98836f;
+		border-radius: 50%;
 	}
 	&__screen {
-		flex: 1 0 100%;
-		position: relative;
-	}
-	&__pagination {
-		position: absolute;
-		top: 50%;
-		right: 50px;
-		transform: translate(0, 0%);
+		min-height: 100vh;
 		display: flex;
-		flex-direction: column;
-		opacity: 0;
-		visibility: hidden;
-		transition: all 0.3s ease 0.6s;
-	}
-	&__bullet {
-		width: 15px;
-		height: 15px;
-		cursor: pointer;
-		background-color: rgba(0, 0, 0, 0.5);
-		border-radius: 50%;
-		margin: 10px 0px;
-		transition: all 0.3s ease;
-		&_active {
-			background-color: #fff;
-		}
-	}
-	&__scroll {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 4px;
-		background-color: rgba(0, 0, 0, 0.2);
-		height: 100%;
-	}
-	&__drag-scroll {
-		position: absolute;
-		width: 100%;
-		top: 0;
-		left: 0;
-		background-color: rgba(0, 0, 0, 0.9);
-		cursor: pointer;
 	}
 }
 .container {
