@@ -1,0 +1,140 @@
+.construction {
+	position: relative;
+	z-index: 2;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__header {
+		img{
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		display: flex;
+		margin: 0px -50px;
+		padding: 15px 0px 0px 0px;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 50px;
+	}
+
+	&__spoiler {
+	}
+
+	&__body {
+	}
+	&__link {
+		display: block;
+		margin: 45px 0px 0px 0px;
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
+.spoiler-construction {
+	&__item {
+		margin: 0px 0px 30px 0px;
+		width: 100%;
+		&:last-child{
+			margin: 0;
+		}
+	}
+
+	&__title {
+		cursor: pointer;
+		position: relative;
+		color: #fbe0d8;
+		font-size: 18px;
+		letter-spacing: 2.07px;
+		border-radius: 10px;
+		background-color: #c1ad9a;
+		padding: 20px 15px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 10px 8px -11px rgba(0, 0, 0, 0.25);
+		&::before {
+			content: "";
+			height: 36px;
+			width: 36px;
+			background: url("../img/icons/arrow.svg") 0 0 no-repeat;
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translate(0, -50%);
+			transition: all 0.3s ease;
+		}
+		&.active {
+			&::before {
+				transform: rotate(180deg) translate(0, 50%);
+			}
+		}
+	}
+
+	&__body {
+	}
+}
+.body-spoiler {
+	display: none;
+	&__list {
+		padding: 45px 25px 35px 25px;
+		background: #e0e7e9;
+		border-radius: 0 0 10px 10px;
+		margin: -10px 0px 0px 0px;
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin: 0px 0px 30px 0px;
+		&:last-child{
+			margin: 0;
+		}
+	}
+
+	&__link {
+		font-size: 18px;
+		line-height: 116.66%;
+		letter-spacing: 0.115em;
+	}
+}
+.body-construction {
+	height: 100%;
+	border-radius: 25px;
+	border: 1px solid #84a323;
+	background-color: #c1ad9a;
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	&__title {
+		text-align: center;
+		font-size: 24px;
+		letter-spacing: 2.76px;
+		text-transform: uppercase;
+	}
+
+	&__list {
+		margin: 30px 0px 0px 0px;
+		flex: 1 1 auto;
+	}
+
+	&__item {
+		margin: 0px 0px 15px 0px;
+	}
+
+	&__link {
+		color: #fbe0d8;
+		font-size: 16px;
+		text-transform: uppercase;
+		line-height: 150%;
+	}
+
+	&__button {
+		align-self: center;
+	}
+}

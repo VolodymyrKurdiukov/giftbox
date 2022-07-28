@@ -1,0 +1,45 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+	.construction {
+		&__column {
+			padding: 0px 15px;
+		}
+		&__content {
+			margin: 0px -15px;
+			padding: 30px 0px 30px 0px;
+		}
+		&__header,
+		&__link {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.construction {
+		&__container {
+			max-width: 100%;
+		}
+		&__content {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 1 1 100%;
+			
+			&:last-child{
+				display: none;
+			}
+		}
+	}
+	.body-construction {
+		&__button {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+}

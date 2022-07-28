@@ -1,13 +1,24 @@
 @media (max-width: 1199.98px) {
-	.box {
-		&__column {
-			flex: 0 0 100%;
+	
+	.main{
+		&__body{
+			display: block;
 		}
+		&__column{
+			&:first-child {
+				padding: 0px 45px;
+				margin: 0px 0px 30px 0px;
+				text-align: center;
+			}
+		}
+	}
+	.social-main{
+		justify-content: center;
 	}
 }
 @media (max-width: 991.98px) {
 	.main {
-		padding: 60px 0px 0px 0px;
+		padding: 80px 0px 0px 0px;
 		&__subtitle {
 			display: block;
 		}
@@ -22,7 +33,7 @@
 	}
 	.box {
 		&__column {
-			flex: 0 0 50%;
+			flex: 0 1 50%;
 		}
 	}
 	.social-main {
@@ -33,6 +44,17 @@
 	}
 }
 @media (max-width: 767.98px) {
+	.main{
+		padding: 80px 0px 0px 0px;
+		&__subtitle{
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	.box {
+		&__column {
+			margin: 0px 0px 20px 0px;
+		}
+	}
 }
 
 @media (max-width: 575.98px) {
@@ -43,11 +65,14 @@
 		&__title {
 			font-size: 16px;
 		}
+		&__img{
+			padding: 0px 0px 80% 0px;
+		}
 	}
 	.main {
 		&__subtitle {
 			max-width: 257px;
-			margin: 0px auto 55px auto;
+			margin: 0px auto 10px auto;
 		}
 	}
 }
@@ -80,16 +105,9 @@
 		}
 	}
 	.box {
-		&__item {
+		&__item{
 			&:hover {
 				transform: scale(1.02);
-			}
-		}
-	}
-	.item-box {
-		&__title {
-			&:hover {
-				color: #34404c;
 			}
 		}
 	}

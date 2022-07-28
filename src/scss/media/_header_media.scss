@@ -1,4 +1,9 @@
 @media (max-width: 1199.98px) {
+	.header {
+		&__logo {
+			flex: 0 1 40%;
+		}
+	}
 }
 @media (max-width: 991.98px) {
 	.contacts-header {
@@ -6,12 +11,17 @@
 	}
 	.actions-header {
 		&__botton {
+			display: none;
 			margin: 0px 0px 0px 20px;
+			&-small {
+				display: inline-flex;
+			}
 		}
 	}
 	.header {
-		&__logo {
-			flex: 0 1 33.333%;
+		position: fixed;
+		&__container {
+			min-height: 68px;
 		}
 	}
 }
@@ -20,25 +30,18 @@
 		&__logo {
 			flex: 0 1 50%;
 		}
-		&__burger {
-			display: block;
-		}
-		&__phone {
+		&__info {
 			display: flex;
-		}
-		&__container {
-			min-height: 68px;
 		}
 	}
 	.actions-header {
-		&__botton {
-			margin: 30px 0px 0px 0px;
-			width: 100%;
-		}
+		
 	}
 	.contacts-header {
 		&__phone {
 			font-size: 40px;
+			line-height: 170%;
+			color: #283644;
 			display: block;
 			margin: 0px 0px 30px 0px;
 		}
@@ -52,11 +55,19 @@
 	.header {
 		&__logo {
 			flex: 0 1 44%;
+			font-size: 25px;
 		}
 	}
 	.contacts-header {
 		&__phone {
 			font-size: 32px;
+		}
+	}
+}
+@media (max-width: 440.98px) {
+	.header {
+		&__logo {
+			font-size: 0;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-.favorite {
+.advanced {
 	position: relative;
 	z-index: 2;
 	flex-direction: column;
@@ -28,17 +28,18 @@
 		flex: 0 0 54%;
 		padding: 0px 25px;
 	}
-	&__link{
+	&__link {
 		display: block;
 		margin: 25px 0px 0px 0px;
-		img{
+		img {
 			max-width: 100%;
 		}
 	}
 }
 
-.body-favorite {
+.body-advanced {
 	height: 100%;
+	width: 100%;
 	border-radius: 25px;
 	border: 1px solid #84a323;
 	background-color: #c1ad9a;
@@ -53,18 +54,19 @@
 	}
 
 	&__list {
-		margin: 50px 0px 0px 0px;
+		margin: 30px 0px 0px 0px;
 		flex: 1 1 auto;
 	}
 
 	&__item {
-		margin: 0px 0px 30px 0px;
+		margin: 0px 0px 15px 0px;
 	}
 
 	&__link {
 		color: #fbe0d8;
-		font-size: 20px;
+		font-size: 16px;
 		text-transform: uppercase;
+		line-height: 150%;
 	}
 
 	&__button {
@@ -72,7 +74,7 @@
 	}
 }
 
-.images-favorite {
+.images-advanced {
 	min-width: 0;
 	&__mainslider {
 		.slick-list {

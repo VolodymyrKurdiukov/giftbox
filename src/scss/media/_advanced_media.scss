@@ -1,12 +1,12 @@
 @media (max-width: 1199.98px) {
-	.body-favorite {
+	.body-advanced {
 		&__link {
 			font-size: 18px;
 		}
 	}
 }
 @media (max-width: 991.98px) {
-	.favorite {
+	.advanced {
 		&__header {
 			display: none;
 		}
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 767.98px) {
-	.favorite {
+	.advanced {
 		&__body {
 			display: none;
 		}
@@ -35,7 +35,7 @@
 		}
 
 	}
-	.images-favorite {
+	.images-advanced {
 		text-align: center;
 		&__mainslide {
 			text-align: center;
@@ -49,7 +49,7 @@
 			display: none;
 		}
 	}
-	.body-favorite {
+	.body-advanced {
 		&__button {
 			width: 100%;
 		}

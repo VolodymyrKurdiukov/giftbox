@@ -17,11 +17,11 @@
 	&__column {
 		padding: 0px 45px;
 		&:first-child {
-			flex: 0 0 48.55%;
+			flex: 0 1 48.55%;
 			padding: 65px 20px 0px 20px;
 		}
 		&:last-child {
-			flex: 0 0 51.45%;
+			flex: 0 1 51.45%;
 		}
 	}
 
@@ -160,7 +160,7 @@
 	}
 	&__img {
 		padding: 0px 0px 100% 0px;
-		border-radius: 15px;
+		border-radius: 12px;
 	}
 	&__title {
 		color: #fbe0d8;
