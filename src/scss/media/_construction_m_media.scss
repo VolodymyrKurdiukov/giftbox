@@ -1,0 +1,20 @@
+@media (max-width: 767.98px) {
+	.construction_m {
+		display: block;
+		padding: 30px 0px 0px 0px;
+		&__column {
+			flex: 1 1 100%;
+			&:last-child{
+				display: none;
+			}
+		}
+		&__text{
+			display: block;
+		}
+	}
+	.body-construction_m {
+		&__button {
+			width: 100%;
+		}
+	}
+}

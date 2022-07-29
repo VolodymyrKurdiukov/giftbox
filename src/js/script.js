@@ -181,6 +181,17 @@ document.querySelectorAll('.spoiler-construction__title').forEach((el) => {
 		}
 	})
 })
+document.querySelectorAll('.spoiler-construction_m__title').forEach((el) => {
+	el.addEventListener('click', () => {
+		let content = el.nextElementSibling;
+		if (content.style.maxHeight) {
+			document.querySelectorAll('.body-spoiler').forEach((el) => el.style.maxHeight = null)
+		} else {
+			document.querySelectorAll('.body-spoiler').forEach((el) => el.style.maxHeight = null)
+			content.style.maxHeight = content.scrollHeight + 'px'
+		}
+	})
+})
 
 $(document).ready(function () {
 	$('.header__info').click(function (event) {
@@ -197,7 +208,12 @@ $(document).ready(function () {
 			$('.spoiler-construction__title').not($(this)).removeClass('active');
 		}
 			$(this).toggleClass('active');
-
+	});
+	$('.spoiler-construction_m__title').click(function (event) {
+		if ($('.spoiler-construction_m__title').hasClass('active')){
+			$('.spoiler-construction_m__title').not($(this)).removeClass('active');
+		}
+			$(this).toggleClass('active');
 	});
 
 	// $('.spoiler-construction__title').click(function (event) {
@@ -245,7 +261,7 @@ $(document).ready(function () {
 		]
 	});
 
-	$('.images-advanced__mainslider').slick({
+	$('.images-favorite_m__mainslider').slick({
 		arrows: false,
 		fade: true,
 		adaptiveHeight: true,
@@ -259,11 +275,48 @@ $(document).ready(function () {
 				}
 			}
 		],
-		asNavFor: '.images-advanced__subslider'
+		asNavFor: '.images-favorite_m__subslider'
 	});
-	$('.images-advanced__subslider').slick({
+	$('.images-favorite_m__subslider').slick({
 		slidesToShow: 10,
-		asNavFor: '.images-advanced__mainslider',
+		asNavFor: '.images-favorite_m__mainslider',
+		dots: false,
+		adaptiveHeight: true,
+		focusOnSelect: true,
+		infinite: true,
+		speed: 500,
+		initialSlide: 0,
+		autoplay: true,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 991.98,
+				settings: {
+					slidesToShow: 6
+				}
+			}
+		]
+	});
+
+	$('.images-advanced_m__mainslider').slick({
+		arrows: false,
+		fade: true,
+		adaptiveHeight: true,
+		infinite: true,
+		speed: 500,
+		responsive: [
+			{
+				breakpoint: 767.98,
+				settings: {
+					dots: true
+				}
+			}
+		],
+		asNavFor: '.images-advanced_m__subslider'
+	});
+	$('.images-advanced_m__subslider').slick({
+		slidesToShow: 10,
+		asNavFor: '.images-advanced_m__mainslider',
 		dots: false,
 		adaptiveHeight: true,
 		focusOnSelect: true,

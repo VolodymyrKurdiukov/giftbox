@@ -20,22 +20,9 @@
 
 @media (max-width: 767.98px) {
 	.construction {
-		display: block;
-		&__column {
-			flex: 1 1 100%;
-			&:last-child{
-				display: none;
-			}
-		}
-		&__text{
-			display: block;
-		}
+		display: none;
 	}
-	.body-construction {
-		&__button {
-			width: 100%;
-		}
-	}
+	
 }
 
 @media (max-width: 575.98px) {

@@ -22,45 +22,12 @@
 		}
 	}
 }
-
-@media (max-width: 767.98px) {
-	.favorite {
-		&__body {
-			display: none;
-		}
-		&__images {
-			flex: 1 1 100%;
-			padding: 0;
-		}
-
-		&__container {
-			max-width: 100%;
-		}
-
-	}
-	.images-favorite {
-		text-align: center;
-		&__mainslide {
-			text-align: center;
-		}
-		&__icon {
-			display: none;
-			&-mini{
-				display: block;
-				right: 8px;
-				bottom: 8px;
-			}
-		}
-		&__subslider {
-			display: none;
-		}
-	}
-	.body-favorite {
-		&__button {
-			width: 100%;
-		}
+@media (max-width: 767.98px){
+	.favorite{
+		display: none;
 	}
 }
+
 
 @media (max-width: 575.98px) {
 }

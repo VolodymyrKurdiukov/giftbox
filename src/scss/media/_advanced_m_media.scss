@@ -1,0 +1,41 @@
+@media (max-width: 767.98px) {
+	.advanced_m {
+		padding: 30px 0px 0px 0px;
+		&__body {
+			display: none;
+		}
+		&__images {
+			flex: 1 1 100%;
+			padding: 0;
+		}
+
+		&__container {
+			max-width: 100%;
+		}
+		&__text {
+			display: block;
+		}
+	}
+	.images-advanced_m {
+		text-align: center;
+		&__mainslide {
+			text-align: center;
+		}
+		&__icon {
+			display: none;
+			&-mini {
+				display: block;
+				right: 8px;
+				bottom: 8px;
+			}
+		}
+		&__subslider {
+			display: none;
+		}
+	}
+	.body-advanced_m {
+		&__button {
+			width: 100%;
+		}
+	}
+}

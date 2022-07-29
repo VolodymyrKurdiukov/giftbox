@@ -2,7 +2,7 @@
 @import "base/fonts";
 @import "base/btn";
 @import "base/links";
-// @import "libs/slick";
+
 
 
 * {
@@ -54,7 +54,14 @@
 @import "blocks/advanced";
 @import "blocks/construction";
 @import "blocks/surprize";
-@import "blocks/footer";
+
+
+
+@import "blocks/favorite_m";
+@import "blocks/advanced_m";
+@import "blocks/construction_m";
+@import "blocks/surprize_m";
+
 
 @import "media/header_media";
 @import "media/main_media";
@@ -62,4 +69,9 @@
 @import "media/advanced_media";
 @import "media/construction_media";
 @import "media/surprize_media";
-@import "media/footer_media";
+
+
+@import "media/favorite_m_media";
+@import "media/advanced_m_media";
+@import "media/construction_m_media";
+@import "media/surprize_m_media";

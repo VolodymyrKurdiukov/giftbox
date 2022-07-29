@@ -1,0 +1,36 @@
+@media (max-width: 767.98px) {
+	.surprize_m {
+		&__content {
+			flex-wrap: wrap;
+			margin: 0;
+		}
+		&__column {
+			padding: 0;
+			flex: 1 1 100%;
+			&:first-child {
+				display: none;
+			}
+			&:last-child {
+				padding: 0px 50px;
+				margin: 0px 0px 50px 0px;
+			}
+		}
+		&__text {
+			display: none;
+			max-width: 100%;
+			&-mini {
+				display: block;
+				span {
+					display: block;
+					margin: 10px 0px 0px 0px;
+				}
+			}
+		}
+		&__img {
+			display: none;
+			&-mini {
+				display: block;
+			}
+		}
+	}
+}
