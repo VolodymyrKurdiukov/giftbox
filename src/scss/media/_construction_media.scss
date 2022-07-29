@@ -20,18 +20,15 @@
 
 @media (max-width: 767.98px) {
 	.construction {
-		&__container {
-			max-width: 100%;
-		}
-		&__content {
-			flex-wrap: wrap;
-		}
+		display: block;
 		&__column {
 			flex: 1 1 100%;
-			
 			&:last-child{
 				display: none;
 			}
+		}
+		&__text{
+			display: block;
 		}
 	}
 	.body-construction {

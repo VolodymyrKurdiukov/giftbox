@@ -8,7 +8,7 @@
 	}
 
 	&__header {
-		img{
+		img {
 			max-width: 100%;
 		}
 	}
@@ -33,8 +33,21 @@
 	&__link {
 		display: block;
 		margin: 45px 0px 0px 0px;
-		img{
+		img {
 			max-width: 100%;
+		}
+	}
+	&__text {
+		box-shadow: 2px 2px 2px -44px rgba(0, 0, 0, 0.25);
+		display: none;
+		line-height: 118.75%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fbe0d8;
+		margin: 10px 0px 0px 0px;
+		span {
+			font-size: 36px;
+			line-height: 116.66%;
 		}
 	}
 }
@@ -43,7 +56,8 @@
 	&__item {
 		margin: 0px 0px 30px 0px;
 		width: 100%;
-		&:last-child{
+		position: relative;
+		&:last-child {
 			margin: 0;
 		}
 	}
@@ -80,19 +94,22 @@
 	}
 }
 .body-spoiler {
-	display: none;
+	overflow: hidden;
+	max-height: 0;
+	transition: all 0.3s ease;
+
+	margin: -10px 0px 0px 0px;
 	&__list {
 		padding: 45px 25px 35px 25px;
 		background: #e0e7e9;
 		border-radius: 0 0 10px 10px;
-		margin: -10px 0px 0px 0px;
 	}
 
 	&__item {
 		display: flex;
 		justify-content: space-between;
 		margin: 0px 0px 30px 0px;
-		&:last-child{
+		&:last-child {
 			margin: 0;
 		}
 	}

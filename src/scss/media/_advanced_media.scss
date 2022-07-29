@@ -11,11 +11,14 @@
 			display: none;
 		}
 		&__content {
-			padding: 30px 0px 0px 0px;
+			padding: 30px 30px 0px 30px;
 			margin: 0;
 		}
 		&__link{
 			display: none;
+		}
+		&__text{
+			display: block;
 		}
 	}
 }
@@ -41,9 +44,12 @@
 			text-align: center;
 		}
 		&__icon {
-			position: static;
-			margin: 15px 0px 0 0;
-
+			display: none;
+			&-mini{
+				display: block;
+				right: 8px;
+				bottom: 8px;
+			}
 		}
 		&__subslider {
 			display: none;

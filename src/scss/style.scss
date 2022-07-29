@@ -45,9 +45,7 @@
 	@media (max-width: 991.98px) {
 		max-width: 750px;
 	}
-	@media (max-width: 767.98px) {
-		max-width: none;
-	}
+	
 }
 
 @import "blocks/header";
@@ -55,6 +53,7 @@
 @import "blocks/favorite";
 @import "blocks/advanced";
 @import "blocks/construction";
+@import "blocks/surprize";
 @import "blocks/footer";
 
 @import "media/header_media";
@@ -62,4 +61,5 @@
 @import "media/favorite_media";
 @import "media/advanced_media";
 @import "media/construction_media";
+@import "media/surprize_media";
 @import "media/footer_media";
