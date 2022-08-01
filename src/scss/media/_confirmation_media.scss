@@ -1,0 +1,18 @@
+@media (max-width:575.98px){
+	.confirmation{
+		&__button{
+			align-self: center;
+		}
+		&__title{
+			font-size: 20px;
+		}
+		&__subtitle{
+			font-size: 20px;
+		}
+		&__text{
+			font-size: 16px;
+			text-align: center;
+			line-height: 1.5;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.confirmation {
+	position: relative;
+	z-index: 2;
+	padding: 0px 0px 80px 0px;
+	&__container {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	&__title {
+		color: #fbe0d8;
+		font-size: 24px;
+		letter-spacing: 2.76px;
+	}
+
+	&__subtitle {
+		color: #fbe0d8;
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 4.14px;
+		margin: 20px 0px;
+	}
+
+	&__text {
+		color: #fbe0d8;
+		font-size: 18px;
+		letter-spacing: 2.07px;
+	}
+
+	&__button {
+		align-self: flex-end;
+	}
+}
+.contaner {
+}
+.button {
+}
+.button-continue {
+}
