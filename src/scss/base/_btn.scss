@@ -18,6 +18,12 @@
 		padding: 15px 40px;
 		text-align: center;
 	}
+	&-big{
+		padding: 20px 110px;
+		@media (max-width:991.98px){
+			padding: 20px 25px;
+		}
+	}
 	&-arrow {
 		position: relative;
 		padding: 20px 125px;

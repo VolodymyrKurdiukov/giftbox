@@ -1,0 +1,147 @@
+.pay {
+	position: relative;
+	z-index: 2;
+	padding: 50px 0px 0px 0px;
+	&__container {
+		flex: 1 1 auto;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__titles {
+		display: flex;
+		justify-content: space-between;
+		margin: 0px 0px 150px 0px;
+	}
+
+	&__title {
+		color: #fbe0d8;
+		font-size: 24px;
+		letter-spacing: 2.76px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&-pay {
+			&::before {
+				content: "";
+				background: url("../img/icons/pay_icon.png") 0 0 no-repeat;
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				margin: 0px 25px 0px 0px;
+			}
+		}
+		&-delivery {
+			&::before {
+				content: "";
+				background: url("../img/icons/delivery_icon.png") 0 0 no-repeat;
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				margin: 0px 25px 0px 0px;
+			}
+		}
+	}
+
+	&__row {
+		flex: 1 1 auto;
+	}
+}
+
+.row-pay {
+	display: flex;
+	margin: 0px -20px;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top: -10%;
+		right: 50%;
+		width: 1px;
+		height: 75%;
+		border: 1px solid #283644;
+	}
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 20px;
+		
+	}
+
+	&__title {
+		color: #fbe0d8;
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 4.14px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__card {
+		color: #fbe0d8;
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 2.76px;
+		line-height: 36px;
+		margin: 0px 0px 30px 0px;
+		p {
+			font-weight: 400;
+		}
+	}
+
+	&__method {
+	}
+}
+.method {
+	margin: 105px 0px 0px 0px;
+	display: flex;
+	align-items: center;
+	&__logo {
+		color: #48a147;
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 5.52px;
+		margin: 0px 50px 0px 0px;
+	}
+
+	&__icon {
+	}
+}
+.delivery {
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	&__items {
+		flex: 1 1 auto;
+	}
+	&__item {
+		min-width: 450px;
+		border-radius: 100px;
+		border: 5px solid #283644;
+		background-color: #ffffff;
+		padding: 12px 12px 12px 12px;
+		margin: 0px 0px 10px 0px;
+	}
+
+	&__input {
+	}
+
+	&__button {
+	}
+}
+.actions-delivery {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 190px 0px 0px 0px;
+	&__button {
+		margin: 0px 0px 20px 0px;
+
+		&-continue {
+		}
+	}
+}
