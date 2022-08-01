@@ -201,6 +201,7 @@ $(document).ready(function () {
 	$('.menu__close').click(function (event) {
 		$('.menu__close').addClass('active');
 		$('.header__menu,.menu__close').removeClass('active');
+		$('body').toggleClass('lock');
 	});
 
 	$('.spoiler-construction__title').click(function (event) {

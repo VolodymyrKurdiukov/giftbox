@@ -1,0 +1,60 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+	.cart{
+		&__item{
+			font-size: 28px;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.cart{
+		padding: 20px 0px 40px 0px;
+		&__item{
+			font-size: 28px;
+			&:last-child{
+				margin: 80px 0px 0px 0px;
+			}
+		}
+		&__row{
+			margin: 0px -10px 50px -10px;
+		}
+		&__column{
+			padding: 0px 10px;
+			&:last-child{
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.cart{
+		&__item{
+			font-size: 18px;
+			letter-spacing: 1.5px;
+		}
+		&__row{
+			margin: 0px 0px 20px 0px;
+		}
+		&__column{
+			padding: 0;
+			&:last-child{
+				text-align: right;
+			}
+		}
+	}
+	.actions-cart{
+		align-items: stretch;
+	}
+}
+@media (max-width: 430.98px){
+	.cart{
+		&__item{
+			font-size: 16px;
+		}
+	}
+}

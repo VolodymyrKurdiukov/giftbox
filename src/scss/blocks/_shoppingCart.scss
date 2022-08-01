@@ -1,0 +1,74 @@
+.cart {
+	position: relative;
+	z-index: 2;
+	padding: 50px 0px 80px 0px;
+	&__container {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		color: #fbe0d8;
+		font-size: 24px;
+		letter-spacing: 2.76px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0px 0px 30px 0px;
+		&::before {
+			content: "";
+			margin: 0px 20px 0px 0px;
+			background: url("../img/icons/shopping-cart.svg") 0 3px no-repeat;
+			width: 25px;
+			height: 32px;
+			display: inline-block;
+		}
+	}
+
+	&__row {
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0px -20px 75px -20px;
+	}
+
+	&__column {
+		padding: 0px 20px;
+		flex: 0 0 50%;
+		&:last-child{
+			text-align: right;
+		}
+	}
+
+	&__item {
+		color: #fbe0d8;
+		font-size: 36px;
+		letter-spacing: 4.14px;
+		margin: 0px 0px 40px 0px;
+		white-space: nowrap;
+		&:last-child{
+			margin: 105px 0px 0px 0px;
+		}
+	}
+
+	&__price {
+		@extend .cart__item;
+	}
+
+	&__actions {
+	}
+}
+.actions-cart {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	&__button {
+		margin: 0px 0px 20px 0px;
+	}
+}
+.button {
+}
+.button-continue {
+}
