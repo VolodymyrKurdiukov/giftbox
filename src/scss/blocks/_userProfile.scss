@@ -1,0 +1,96 @@
+.user-profile {
+	position: relative;
+	z-index: 2;
+	padding: 50px 0px;
+	&__container {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		color: #fbe0d8;
+		font-size: 24px;
+		letter-spacing: 2.76px;
+		text-align: center;
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__main {
+		flex: 1 1 auto;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__column {
+	}
+
+	&__button {
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__text {
+		color: #fbe0d8;
+		font-size: 36px;
+		letter-spacing: 4.14px;
+		span{
+			display: inline-block;
+			margin: 0px 0px 0px 100px;
+		}
+	}
+}
+.container {
+}
+.main-user {
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+	&__actions {
+		position: relative;
+		display: inline-block;
+	}
+
+	&__icon {
+		margin: 0px auto;
+		border-radius: 100%;
+		position: relative;
+		height: 230px;
+		width: 230px;
+		img{
+			max-width: 100%;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			width: 120%;
+			height: 120%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 100%;
+			border: 1px solid #283644;
+			background-color: #6c7a89;
+			z-index: -1;
+		}
+	}
+
+	&__edit {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		transition: all 0.3s ease;
+	}
+
+	&__nmae {
+		color: #fbe0d8;
+		font-size: 36px;
+		letter-spacing: 4.14px;
+		margin: 70px 0px 0px 0px;
+	}
+}
+.button {
+}
+.button-continue {
+}
