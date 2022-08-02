@@ -1,0 +1,69 @@
+.history {
+	position: relative;
+	z-index: 2;
+	padding: 50px 0;
+	text-align: center;
+	&__container {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__title {
+		color: #fbe0d8;
+		font-size: 24px;
+		letter-spacing: 2.76px;
+		margin: 0px 0px 100px 0px;
+	}
+
+	&__items {
+		flex: 1 1 auto;
+		
+	}
+
+	&__item {
+		color: #fbe0d8;
+		font-family: Roboto;
+		font-size: 36px;
+		letter-spacing: 4.14px;
+		display: flex;
+		margin: 0px -15px 40px -15px;
+		align-items: center;
+
+	}
+
+	&__date {
+		flex: 0 0 14.87%;
+		padding: 0px 15px;
+	}
+
+	&__order {
+		flex: 1 1 auto;
+		padding: 0px 15px 0 40px;
+		text-align: left;
+	}
+
+	&__price {
+		flex: 0 0 6.32%;
+		padding: 0px 15px;
+	}
+
+	&__icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 42px;
+		width: 42px;
+		height: 42px;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+		background-color: #d5c8b8;
+		border-radius: 100%;
+		transition: 0.3s all ease;
+		padding: 0px 15px;
+	}
+
+	&__button {
+		align-self: center;
+	}
+}

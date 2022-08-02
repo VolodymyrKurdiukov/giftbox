@@ -1,0 +1,56 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+	.history {
+		&__item {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0px 0px 20px 0px;
+		}
+		&__date {
+			order: 1;
+			padding: 0;
+		}
+
+		&__order {
+			order: 4;
+			flex: 1 1 100%;
+			padding: 0px;
+			margin: 15px 0px 0px 0px;
+		}
+
+		&__price {
+			order: 2;
+			text-align: right;
+			padding: 0;
+		}
+
+		&__icon {
+			order: 3;
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.history{
+		&__order{
+			font-size: 25px;
+		}
+		&__title{
+			margin: 0px 0px 35px 0px;
+		}
+	}
+}
+@media (max-width: 400.98px) {
+	.history{
+		&__date{
+			font-size: 20px;
+		}
+	}
+}
